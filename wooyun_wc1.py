@@ -5,7 +5,7 @@ import jieba
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
-data = open("/root/program/python/python_projects/crawler/wooyun_wordcloud/wooyunBugTitle.txt","r").read()
+data = open("wooyunBugTitle.txt","r").read()
 cutData = jieba.cut(data, cut_all=True)
 word = " ".join(cutData)
 
